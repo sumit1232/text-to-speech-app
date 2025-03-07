@@ -1,0 +1,112 @@
+/* Color Hunt Palette: #FBFBFB #E8F9FF #C4D9FF #C5BAFF */
+
+body {
+  font-family: sans-serif;
+  background-color: #FBFBFB;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app-container {
+  background-color: #E8F9FF;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  color: #C5BAFF; /* Accent color for the heading */
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #C4D9FF;
+  border-radius: 8px;
+  font-size: 16px;
+  resize: vertical;
+  background-color: #FBFBFB;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+  border-color: #C5BAFF;
+  outline: none;
+  box-shadow: 0 0 8px rgba(197, 186, 255, 0.3);
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #C4D9FF;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #FBFBFB;
+  color: #333;
+  appearance: none; /* Remove default arrow */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z' fill='%23333'/%3E%3C/svg%3E"); /* Custom arrow */
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 20px;
+  transition: border-color 0.3s ease;
+}
+
+select:focus {
+  border-color: #C5BAFF;
+  outline: none;
+  box-shadow: 0 0 8px rgba(197, 186, 255, 0.3);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.speak-button {
+  background-color: #C5BAFF;
+  color: #FBFBFB;
+}
+
+.stop-button {
+  background-color: #FF6B6B;
+  color: #FBFBFB;
+}
+
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
